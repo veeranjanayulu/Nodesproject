@@ -1,0 +1,6 @@
+projectKey=backend
+serverUrl=http://3.96.192.43:9000
+serverVersion=9.9.7.96285
+dashboardUrl=http://3.96.192.43:9000/dashboard?id=backend
+ceTaskId=AZMahdcVI4o-8kjmMbFz
+ceTaskUrl=http://3.96.192.43:9000/api/ce/task?id=AZMahdcVI4o-8kjmMbFz
