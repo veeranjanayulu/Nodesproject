@@ -1,6 +1,6 @@
 resource "aws_db_instance" "rds" {
   allocated_storage      = 20
-  identifier = "book-rdss"
+  identifier = "book-rds"
   db_subnet_group_name   = aws_db_subnet_group.sub-grp.id
   engine                 = "mysql"
   engine_version         = "8.0.32"
