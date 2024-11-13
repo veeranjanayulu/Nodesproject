@@ -113,7 +113,7 @@ provider "aws" {
  # data source 
  data "aws_vpc" "main" {
   tags = {
-    Name = "Jumphost-vpcc"  # Specify the name of your existing VPC
+    Name = "Jumphost-vpc"  # Specify the name of your existing VPC
   }
 }
 
@@ -121,7 +121,7 @@ data "aws_subnet" "subnet-1" {
  vpc_id = data.aws_vpc.main.id
  filter {
     name = "tag:Name"
-    values = ["Jumphost-subnet11"]
+    values = ["Jumphost-subnet1"]
  }
 }
 
@@ -129,7 +129,7 @@ data "aws_subnet" "subnet-2" {
  vpc_id = data.aws_vpc.main.id
  filter {
     name = "tag:Name"
-    values = ["Jumphost-subnet22"]
+    values = ["Jumphost-subnet2"]
  }
 }
 data "aws_security_group" "selected" {
